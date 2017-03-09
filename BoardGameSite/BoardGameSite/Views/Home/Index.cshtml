@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Board Game Log";
+}
+
+<div class="jumbotron">
+    <h1>Board Game Log!</h1>
+    <p class="lead">Welcome to the board game log app. You can manage the games in your library, the people you play with, and of course log your victories!</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+      <h2>Games</h2>
+      <p>Add, Update, Delete, or view all of the games in your libarary!</p>
+        <p><a class="btn btn-default" href="@Url.Action("Games", "Home")">Manage your Game Library</a></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Players</h2>
+      <p>Add, Update, Delete, or view all of the people you play games with!</p>
+        <p><a class="btn btn-default" href="@Url.Action("Players", "Home")">Manage the Players</a></p>
+    </div>
+    <div class="col-md-4">
+      <h2>Games Played</h2>
+      <p>Add, Update, Delete, or view all of the games you have played and won!</p>
+        <p><a class="btn btn-default" href="@Url.Action("GamesPlayed", "Home")">Record your Victories</a></p>
+    </div>
+</div>

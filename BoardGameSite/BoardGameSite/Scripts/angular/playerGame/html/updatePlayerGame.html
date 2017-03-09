@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+</head>
+<body>
+  <div ng-controller="playerGameUpdateController as vm" ng-init="vm.initialize()">
+    <form name="addPlayerGameForm" ng-submit="vm.updatePlayerGame()">
+      <br />
+      <h2>Update Player Game</h2>
+      <br />
+      <div class="col-sm-4">
+
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="drpPlayer">Select A Player:</label>
+          <select class="form-control" id="drpPlayer" ng-model="vm.playerGameToUpdate.player" ng-options="p.description for p in vm.players track by p.playerId"></select>
+        </div>
+        <div class="form-group">
+          <label for="drpPlayer">Select A Game:</label>
+          <select class="form-control" id="drpGame" ng-model="vm.playerGameToUpdate.game" ng-options="g.description for g in vm.games track by g.gameId"></select>
+        </div>
+        <div class="col-sm-12 text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+
+      </div>
+    </form>
+  </div>
+</body>
+</html>

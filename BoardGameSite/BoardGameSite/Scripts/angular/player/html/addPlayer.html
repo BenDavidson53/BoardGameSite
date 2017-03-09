@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+</head>
+<body>
+  <div ng-controller="playerAddController as vm">
+    <form name="addPlayerForm" ng-submit="vm.addPlayer()">
+      <br />
+      <h2>Add Player</h2>
+      <br />
+      <div class="col-sm-4">
+
+      </div>
+      <div class="col-sm-4">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label for="txtPlayerDescription">Player Description</label>
+            <input class="form-control" type="text" name="txtPlayerDescription" id="txtPlayerDescription" ng-model="vm.playerDescription" />
+          </div>
+        </div>
+        <div class="col-sm-12 text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+
+      </div>
+    </form>
+  </div>
+</body>
+</html>

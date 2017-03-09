@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>All Games</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+<div ng-controller="gameController as vm" ng-init="vm.initialize()">
+  
+  <br/>
+  <h2>Manage Games</h2>
+  <br/>
+  <div class="text-right">
+    <button type="button" class="btn btn-success" ng-click="vm.addGame()">Add Game</button>
+  </div>
+  <br/>
+
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+    <tr>
+      <td>Game Id</td>
+      <td>Game Description</td>
+      <td></td>
+      <td></td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="game in vm.games">
+      <td>{{game.gameId}}</td>
+      <td>{{game.description}}</td>
+      <td class="text-center"><button class="btn btn-xs btn-danger" type="button" ng-click="vm.deleteGame(game)">Delete</button></td>
+      <td class="text-center"><button class="btn btn-xs btn-warning" type="button" ng-click="vm.updateGame(game)">Update</button></td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

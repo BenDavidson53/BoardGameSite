@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8" />
+</head>
+<body>
+  <div ng-controller="playerUpdateController as vm">
+    <form name="updatePlayerForm" ng-submit="vm.updatePlayer()" ng-init="vm.initialize()">
+      <br />
+      <h2>Update Player</h2>
+      <br />
+      <div class="col-sm-4">
+
+      </div>
+      <div class="col-sm-4">
+        <div class="col-sm-12">
+          <div class="form-group">
+            <label for="txtPlayerDescription">Player Description</label>
+            <input class="form-control" type="text" name="txtPlayerDescription" id="txtPlayerDescription" ng-model="vm.playerToUpdate.description" />
+          </div>
+        </div>
+        <div class="col-sm-12 text-center">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+      <div class="col-sm-4">
+
+      </div>
+    </form>
+  </div>
+</body>
+</html>
