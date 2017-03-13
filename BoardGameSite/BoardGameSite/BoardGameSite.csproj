@@ -232,7 +232,7 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\EFbasics\BoardGameLog\BoardGameDataFinish\BoardGameDataFinish.csproj">
+    <ProjectReference Include="..\..\BoardGameDataFinish\BoardGameDataFinish.csproj">
       <Project>{b1d3b537-fa98-45b4-ae00-ca9b120a7f98}</Project>
       <Name>BoardGameDataFinish</Name>
     </ProjectReference>

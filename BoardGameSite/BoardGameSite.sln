@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardGameSite", "BoardGameSite\BoardGameSite.csproj", "{40602E47-A898-4D79-A414-6CA2006820ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardGameDataFinish", "..\..\EFbasics\BoardGameLog\BoardGameDataFinish\BoardGameDataFinish.csproj", "{B1D3B537-FA98-45B4-AE00-CA9B120A7F98}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BoardGameDataFinish", "..\BoardGameDataFinish\BoardGameDataFinish.csproj", "{B1D3B537-FA98-45B4-AE00-CA9B120A7F98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
