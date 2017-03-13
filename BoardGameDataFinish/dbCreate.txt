@@ -1,0 +1,20 @@
+﻿CREATE TABLE dbo.Game
+(
+	GameId		INT  IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	Description	VARCHAR(100) NOT NULL
+)
+
+CREATE TABLE dbo.Player
+(
+	PlayerId	INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	Description	VARCHAR(100) NOT NULL
+)
+
+CREATE TABLE dbo.PlayerGame
+(
+	PlayerGameId	INT NOT NULL,
+	PlayerId		INT NOT NULL,
+	GameId			INT NOT NULL,
+	CONSTRAINT FK_PlayerGame_Player FOREIGN KEY (PlayerId) REFERENCES dbo.Player(PlayerId),
+	CONSTRAINT FK_PlayerGame_Game FOREIGN KEY (GameId) REFERENCES dbo.Game(GameId)
+)
